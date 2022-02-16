@@ -12,16 +12,17 @@
     "generate": "yarn plop --plopfile ./generetors/plopfile.js"
   },
   "lint-staged": {
-   "src/**/*": [
-     "yarn lint --fix",
-     "yarn test  --findRelatedTests --bail"
-   ]
- },
+    "src/**/*": [
+      "yarn lint --fix",
+      "yarn test  --findRelatedTests --bail"
+    ]
+  },
   "dependencies": {
     "next": "12.0.7",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "styled-components": "^5.3.3"
+    "styled-components": "^5.3.3",
+    "styled-media-query": "^2.1.2"
   },
   "devDependencies": {
     "@babel/core": "^7.16.7",
@@ -45,10 +46,10 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.28.0",
     "eslint-plugin-storybook": "^0.5.5",
-    "prettier": "^2.5.1",
-    "plop": "^2.7.4",
-    "typescript": "^4.5.4",
     "husky": "^6.0.0",
-    "lint-staged": "^11.0.0"
+    "lint-staged": "^11.0.0",
+    "plop": "^2.7.4",
+    "prettier": "^2.5.1",
+    "typescript": "^4.5.4"
   }
 }
